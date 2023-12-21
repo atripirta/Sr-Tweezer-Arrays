@@ -1,2 +1,2 @@
 # Sr-Tweezer-Arrays
-This repository contains summary/manual/setup instructions and codes for Strontium Tweezer Array project. 
+This repository contains setup instructions and codes for the Strontium Tweezer Array project. 
