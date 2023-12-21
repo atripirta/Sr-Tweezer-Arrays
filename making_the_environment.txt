@@ -4,10 +4,19 @@ For Linux systems:
 1) In the same folder the "getting-started-with-pico.pdf" file (Chapter 1, 2 and 3) contains how to setup the SDK for running a simple blink C-code on RPi Pico.
 2) After configuring and running the blink code. One can go in the ddssweeper folder edit the main dds-sweeper.c code to their convenience and then in the build
 folder use the terminal to create a ".uf2" file by using the command "make".
-3) This file can be directly copy-pasted on the RPi. After copying the RPi will be running the firmware whenever it is powered on.
+3) This file can be directly copy-pasted on the RPi while pressing bootsel mode button. After copying the RPi will be running the firmware whenever it is powered on.
 4) Once the connections using the schematic are made, then the DDS can be controlled using serial communication between RPi and PC.
 5) The serial communication script ("tests.ipynb") format can be run on Jupyter Notebook.
 
 For Windows systems:
 1) (https://vanhunteradams.com/Pico/Setup/PicoSetup.html). The given site may help to setup the C/C++ environment.
-2)
+2) Section 9.2 of "getting-started-with-pico.pdf" contains the complete details of building the VS code environment for the RPi.
+3) In linux the command used to create the firmware file is cmake and make, in Developer Command Prompt for VS the command used are 'cmake -G "NMake Makefiles" ..' and 'nmake'.
+4) After installing the initial setup for cmake, git, VS code and Python, clone the github directory to the respective folder by running the following command on powershell 'https://github.com/atripirta/Sr-Tweezer-Arrays'. This clones the required code in the local memory. The folder contains a blink folder to check the working (one may ignore this).
+5) Copy the ddssweeper named folder to the directory that contains pico-sdk and pico-examples.
+6) Go to the build folder in ddssweeper and delete it's content. (the cache file may contain addresses of previous pc)
+7) Using developer command prompt for Visual Studio go to the build folder and set the SDK path using the following command, setx PICO_SDK_PATH "..\..\pico-sdk".
+8) Close the command prompt and go to the build folder again (in VS developer cmd only).
+9) 'cmake -G "NMake Makefiles" ..' type the given command and run it.
+10) Then run 'nmake'.
+11) This will create flashable firmware file with the extension ".uf2". This can be just copy pasted to RPi while pressing 'bootsel' mode button and it will run the main C code.
