@@ -1,0 +1,13 @@
+This file contains how to make the environment.
+
+For Linux systems:
+1) In the same folder the "getting-started-with-pico.pdf" file (Chapter 1, 2 and 3) contains how to setup the SDK for running a simple blink C-code on RPi Pico.
+2) After configuring and running the blink code. One can go in the ddssweeper folder edit the main dds-sweeper.c code to their convenience and then in the build
+folder use the terminal to create a ".uf2" file by using the command "make".
+3) This file can be directly copy-pasted on the RPi. After copying the RPi will be running the firmware whenever it is powered on.
+4) Once the connections using the schematic are made, then the DDS can be controlled using serial communication between RPi and PC.
+5) The serial communication script ("tests.ipynb") format can be run on Jupyter Notebook.
+
+For Windows systems:
+1) (https://vanhunteradams.com/Pico/Setup/PicoSetup.html). The given site may help to setup the C/C++ environment.
+2)

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pico-sdk/src/rp2_common/pico_malloc",
+		"source" : "/home/atripathi/Desktop/9th_Semester_Project/RPI_PICO/pico-sdk/src/rp2_common/pico_malloc"
+	}
+}
