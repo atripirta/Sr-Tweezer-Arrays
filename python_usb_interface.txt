@@ -1,0 +1,2 @@
+Once the cmake command has been run one doesn't needs to run it again after modifying the dds-sweeper.c code. One can just run the make command and that will create 
+the .uf2 file. After copy pasting the file on RPi, one can interface with RPi using Python/Jupyter Notebook and the 'tests.ipynb' file. 
