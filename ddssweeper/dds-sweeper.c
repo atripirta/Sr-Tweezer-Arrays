@@ -660,7 +660,7 @@ void loop() {
         send_channel(0x06, channel, asf, 3);
         update();
         sleep_ms(1);}
-      } else if (strncmp(readstring, "freq_and_amp", 12) == 0) {//changing amplitude as well as frequency to get stability under 1 percent.
+      } else if (strncmp(readstring, "freq_and_amp", 12) == 0) {
         // setfreq <channel:int> <frequency:float>
 
         uint channel=0;
@@ -688,7 +688,7 @@ void loop() {
         i=85;
         j++;
       }
-    } else if (strncmp(readstring, "Cust", 4) == 0) {//changing amplitude as well as frequency to get stability under 1 percent.
+    } else if (strncmp(readstring, "Cust", 4) == 0) {
         // setfreq <channel:int> <frequency:float>
 
         uint channel=0;
@@ -746,7 +746,7 @@ void loop() {
           //printf("Frequency in MHz:",i);
         }i=0;j++;}
     }
-    else if (strncmp(readstring, "pattern1", 8) == 0) {//changing amplitude as well as frequency to get stability under 1 percent.
+    else if (strncmp(readstring, "pattern1", 8) == 0) {// 2 diagnol points
         // setfreq <channel:int> <frequency:float>
 
         uint channel=0;
@@ -786,7 +786,7 @@ void loop() {
           sleep_ms(1);
         
         }
-    } else if (strncmp(readstring, "pattern2", 8) == 0) {//changing amplitude as well as frequency to get stability under 1 percent.
+    } else if (strncmp(readstring, "pattern2", 8) == 0) {
         // setfreq <channel:int> <frequency:float>
         
         uint channel=0;
@@ -1071,7 +1071,7 @@ void loop() {
           sleep_ms(1);
         
         }
-    } else if (strncmp(readstring, "pattern5", 8) == 0) {//changing amplitude as well as frequency to get stability under 1 percent.
+    } else if (strncmp(readstring, "pattern5", 8) == 0) {
         // setfreq <channel:int> <frequency:float>
         
         uint channel=0;
@@ -1209,7 +1209,7 @@ void loop() {
           update();
           sleep_ms(1);
         }
-    } else if (strncmp(readstring, "pattern6", 8) == 0) {//changing amplitude as well as frequency to get stability under 1 percent.
+    } else if (strncmp(readstring, "pattern6", 8) == 0) {
         // setfreq <channel:int> <frequency:float>
         
         uint channel=0;
@@ -1315,7 +1315,7 @@ void loop() {
           update();
           sleep_ms(1);
         }
-    } else if (strncmp(readstring, "pattern7", 8) == 0) {//changing amplitude as well as frequency to get stability under 1 percent.
+    } else if (strncmp(readstring, "pattern7", 8) == 0) {
         // setfreq <channel:int> <frequency:float>
         
         uint channel=0;
