@@ -1,5 +1,6 @@
 // Before running this code QNimble needs to be setup on Arduino IDE, the details can be seen from their site.
-#define SETPOINT 0.35// the value in Volts on Oscilloscope due to DAC when the ADC input is from PD and the RF power is 1.2W for AOM and with Laser current at 70mA(whatever is readon DAC is written on ADC)
+// Depending on the Setpoint the Proportional and Integral parameters may need to be changed.
+#define SETPOINT 0.35
 
 //double adc2=0.0;
 void setup(void) {  
@@ -21,7 +22,7 @@ void getADC1(void) {
  // writeDAC(3,newdac);
   }
   else{
-  writeDAC(1,0.9);
+  writeDAC(1,0.9); //Upper bound for RF power output to AOM
  // writeDAC(3,newdac);
   }// writeDAC(3,--); command is just to see what feedback it is giving to the amplifier, this line can be commented out.
   
