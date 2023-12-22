@@ -1,3 +1,4 @@
+// Before running this code QNimble needs to be setup on Arduino IDE, the details can be seen from their site.
 #define SETPOINT 0.35// the value in Volts on Oscilloscope due to DAC when the ADC input is from PD and the RF power is 1.2W for AOM and with Laser current at 70mA(whatever is readon DAC is written on ADC)
 
 //double adc2=0.0;
